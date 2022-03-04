@@ -9,7 +9,7 @@ class TokenManager {
   }
 
   decode(bearerToken: string): string {
-    const [_, token] = bearerToken.split('Bearer ');
+    const [, token] = bearerToken.split('Bearer ');
 
     const value = jwt.verify(token, this.SECRET_KEY) as string;
     return value;
