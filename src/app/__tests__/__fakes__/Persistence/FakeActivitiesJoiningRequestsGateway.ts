@@ -27,6 +27,17 @@ class FakeActivitiesJoiningRequestsGateway
     return requests.reverse();
   }
 
+  async findById(id: string): Promise<IActivityJoiningRequest | undefined> {
+    return this.map.get(id);
+  }
+
+  async update(
+    request: IActivityJoiningRequest,
+  ): Promise<IActivityJoiningRequest> {
+    this.map.set(request.requestId, request);
+    return request;
+  }
+
   deleteAll() {
     this.map.clear();
   }
