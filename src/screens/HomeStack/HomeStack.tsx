@@ -10,6 +10,8 @@ import {MainStackScreenProps} from '../MainStack.types';
 
 // screens
 import {Home} from './screens/Home/Home';
+import {AddActivity} from './screens/AddActivity/AddActivity';
+import {Notifications} from './screens/Notifications/Notifications';
 
 interface Props extends MainStackScreenProps<'HomeStack'> {}
 
@@ -23,6 +25,8 @@ const HomeStack: React.FC<Props> = () => {
   return (
     <Stack.Navigator screenOptions={screensOptions}>
       <Stack.Screen name="Home" component={Home} />
+      <Stack.Screen name="AddActivity" component={AddActivity} />
+      <Stack.Screen name="Notifications" component={Notifications} />
     </Stack.Navigator>
   );
 };

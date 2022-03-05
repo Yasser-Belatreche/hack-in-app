@@ -1,5 +1,24 @@
-import {StyleProp, ViewStyle} from 'react-native';
+import {StyleProp, StyleSheet, ViewStyle} from 'react-native';
+import {COLORS} from '../../theme/Colors';
 
-const styles: StyleProp<ViewStyle> = {};
+const globalStyle: StyleProp<ViewStyle> = {
+  padding: 25,
+  width: '100%',
+  display: 'flex',
+  alignItems: 'center',
+  borderRadius: 15,
+  marginTop: 10,
+};
 
-export default styles;
+const styles = StyleSheet.create({
+  primary: {
+    ...globalStyle,
+    backgroundColor: COLORS.primary,
+  },
+  secondary: {
+    ...globalStyle,
+    backgroundColor: COLORS.secondary,
+  },
+});
+
+export {styles};

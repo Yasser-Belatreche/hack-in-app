@@ -1,6 +1,6 @@
-// import and export you images as an object from that file
 const IMAGES = {
-  AppleWatch: require('../../assets/images/apple-watch.png'),
+  Logo: require('../../assets/images/Logo.png'),
+  LogoTitle: require('../../assets/images/GeoMeet.png'),
 };
 
 export {IMAGES};

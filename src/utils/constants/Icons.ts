@@ -1,7 +1,8 @@
 // import and export you icons as an object from that file
 
 const ICONS = {
-  QRCode: require('../../assets/icons/qrcode.svg'),
+  BackArrow: require('../../assets/icons/back-arrow.png'),
+  Notification: require('../../assets/icons/notification.png'),
 };
 
 export {ICONS};

@@ -8,6 +8,7 @@ import {
 import {MainStackParamsList} from './MainStack.types';
 
 // stacks
+import {AuthStack} from './AuthStack/AuthStack';
 import {HomeStack} from './HomeStack/HomeStack';
 
 interface Props {}
@@ -21,6 +22,7 @@ const MainStack: React.FC<Props> = () => {
 
   return (
     <Stack.Navigator screenOptions={screensOptions}>
+      <Stack.Screen name="AuthStack" component={AuthStack} />
       <Stack.Screen name="HomeStack" component={HomeStack} />
     </Stack.Navigator>
   );

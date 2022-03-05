@@ -1,28 +1,30 @@
 import {StyleSheet} from 'react-native';
+import {COLORS} from '../../../../theme/Colors';
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    padding: 20,
+  },
+
+  topHead: {
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+
+  addActivityButton: {
+    display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#3b4ba5',
-  },
-
-  happyCoding: {
-    color: '#fff',
-    fontSize: 30,
-    fontWeight: '700',
-    marginBottom: 10,
-  },
-
-  credit: {
-    color: '#fff',
-    fontSize: 18,
-    fontWeight: '700',
-  },
-
-  underline: {
-    textDecorationLine: 'underline',
+    width: 70,
+    height: 70,
+    position: 'absolute',
+    bottom: 30,
+    right: 30,
+    borderRadius: 35,
+    backgroundColor: COLORS.primary,
   },
 });
 
